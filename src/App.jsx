@@ -8,26 +8,37 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="app">
+        {/* Header Section */}
+        <header className="app-header">
+          <nav>
+            <h1>MyTunes</h1>
+          </nav>
+        </header>
+
+        {/* Main Content Section */}
+        <main className="app-content">
+          <div className="content-container">
+            <div className='left-content-container'>
+              <img src="/public/images/justin-bieber.gif" alt="Justin Bieber" />
+            </div>
+            <div className='right-content-container'>
+              <h2>Justin Bieber's Albums</h2>
+              <details>
+                <summary>System Requirements</summary>
+                <p>
+                  Requires a computer running an operating system. The computer must have some
+                  memory and ideally some kind of long-term storage. An input device as well
+                  as some form of output device is recommended.
+                </p>
+              </details>
+            </div>
+          </div>
+        </main>
+
+        {/* Footer Section */}
+        <footer className="app-footer"></footer>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
