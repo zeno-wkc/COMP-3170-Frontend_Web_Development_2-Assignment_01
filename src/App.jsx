@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import image from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
         <main className="app-content">
           <div className="content-container">
             <div className='left-content-container'>
-              <img src={'justin-bieber.gif'} alt='Justin Bieber' />
+              <img src={'/images/justin-bieber.gif'} alt='Justin Bieber' />
             </div>
             <div className='right-content-container'>
               <h2>Justin Bieber's Albums</h2>
